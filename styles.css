@@ -134,6 +134,14 @@ main {
   color: #757575;
 }
 /* Tablas */
+.main-tables-container{
+  display: flex;
+  padding: 0 40px;
+  gap: 40px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 .main-currency-table ,
  .main-commissions-table {
   width: 70%;
@@ -164,6 +172,7 @@ main {
   max-width: 300px;
   height: 250px;
   margin: 0 auto;
+  scroll-snap-align: center;
 }
 .currency-table--container table, 
 .commissions-table--container table {
